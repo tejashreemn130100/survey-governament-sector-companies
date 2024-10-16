@@ -11,61 +11,66 @@ body, html {
     background-color: #f4f4f4;
 }
 
-/* Login Page Wrapper */
-.login-wrapper {
+/* Main Container */
+.container {
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
-    background: url('your-image-path.png') no-repeat center center/cover;
-    position: relative;
 }
 
-/* KAPL Content */
-.kapl-content {
-    position: absolute;
-    top: 10%;
-    left: 5%;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    width: 400px;
-    color: #333;
-}
-
-.kapl-content h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.kapl-content p {
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-/* Login Form Styling */
-.login-form {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+/* Left Section Styling */
+.left-section {
+    flex: 1;
+    background-color: #6a0dad;
+    color: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
 }
 
-.login-form h2 {
-    color: #333;
+.left-section h1 {
+    font-size: 48px;
     margin-bottom: 20px;
 }
 
+.left-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Right Section Styling */
+.right-section {
+    flex: 1;
+    background-color: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.right-section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.right-section p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* Input Group Styling */
 .input-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .input-group label {
     display: block;
     font-size: 14px;
     margin-bottom: 5px;
-    color: #555;
+    color: #333;
 }
 
 .input-group input {
@@ -76,6 +81,7 @@ body, html {
     border-radius: 5px;
 }
 
+/* Submit Button Styling */
 .submit-btn {
     background-color: #4CAF50;
     color: white;
@@ -93,18 +99,13 @@ body, html {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .login-wrapper {
+    .container {
         flex-direction: column;
+    }
+
+    .left-section, .right-section {
+        flex: none;
+        width: 100%;
         padding: 20px;
-    }
-
-    .kapl-content {
-        width: 90%;
-        top: 5%;
-        left: 5%;
-    }
-
-    .login-form {
-        width: 90%;
     }
 }
