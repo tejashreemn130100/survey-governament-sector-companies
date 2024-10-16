@@ -3,38 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>KAPL Login</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="login-container">
-        <div class="login-box">
+    <div class="login-wrapper">
+        <!-- Content Area with KAPL Info -->
+        <div class="kapl-content">
+            <h1>Welcome to Karnataka Antibiotics & Pharmaceuticals Limited (KAPL)</h1>
+            <p>
+                Karnataka Antibiotics & Pharmaceuticals Limited is committed to producing high-quality pharmaceutical products. 
+                Your feedback is valuable to help us continue improving.
+            </p>
+        </div>
+        <!-- Login Form -->
+        <div class="login-form">
             <h2>Login</h2>
             <form id="loginForm">
                 <div class="input-group">
-                    <label for="username">Username</label>
-                    <input type="text" id="username" placeholder="Enter your username">
+                    <label for="name">Enter Your Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
                 </div>
                 <div class="input-group">
-                    <button type="submit" class="login-btn">Submit</button>
+                    <button type="submit" class="submit-btn">Submit</button>
                 </div>
             </form>
         </div>
-
-        <!-- Sliding Message Container -->
-        <div class="sliding-message">
-            <img src="picture.jpg" alt="Message Picture">
-            <div class="message-text">
-                <h3>Welcome to the Platform!</h3>
-                <p>Enjoy your time with us.</p>
-            </div>
-        </div>
     </div>
-    
+
     <script>
         document.getElementById('loginForm').addEventListener('submit', function(event) {
             event.preventDefault();
-            // Redirect to the survey page on form submission
+            // Redirect to survey page after name submission
             window.location.href = 'survey.html';
         });
     </script>
