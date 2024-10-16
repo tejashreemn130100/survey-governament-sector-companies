@@ -17,32 +17,24 @@ body, html {
     height: 100vh;
 }
 
-/* Left Section with Image Background */
+/* Left Section Styling */
 .left-section {
     flex: 1;
-    background-image: url('your-kapl-image-path.jpg'); /* Replace with your KAPL image */
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
-.welcome-content {
-    background-color: rgba(0, 0, 0, 0.5); /* Optional overlay for readability */
+    background-color: #6a0dad;
     color: white;
     padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
     text-align: center;
 }
 
-.welcome-content h1 {
+.left-section h1 {
     font-size: 48px;
     margin-bottom: 20px;
 }
 
-.welcome-content p {
+.left-section p {
     font-size: 18px;
     line-height: 1.6;
 }
