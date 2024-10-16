@@ -8,37 +8,30 @@
 </head>
 <body>
     <div class="container">
-        <!-- Left Section with Welcome Message -->
-        <div class="left-section">
-            <h1>Hello, Welcome to KAPL!</h1>
-            <p>Karnataka Antibiotics & Pharmaceuticals Limited is dedicated to delivering top-notch pharmaceutical products. We strive for excellence and your input is vital in helping us grow.</p>
-        </div>
-
-        <!-- Right Section with Form -->
-        <div class="right-section">
-            <h2>Welcome Back!</h2>
-            <p>Please enter your details to proceed with the survey.</p>
-            <form id="loginForm">
-                <div class="input-group">
-                    <label for="name">Enter Your Name</label>
-                    <input type="text" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="input-group">
-                    <label for="email">Enter Your Email</label>
-                    <input type="email" id="email" placeholder="you@example.com" required>
-                </div>
-                <div class="input-group">
+        <div class="overlay">
+            <div class="form-box">
+                <img src="kapl-logo.png" alt="KAPL Logo" class="logo"> <!-- Optional logo -->
+                <h2>Enter Your Details</h2>
+                <p>Log in to KAPL to access our pharmaceutical services. If you don't have an account, you'll be prompted to create one.</p>
+                <form id="loginForm">
+                    <div class="input-group">
+                        <input type="text" id="name" placeholder="Enter Your Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" placeholder="Enter Your Email" required>
+                    </div>
                     <button type="submit" class="submit-btn">Submit</button>
-                </div>
-            </form>
+                </form>
+                <p class="support-link">Need help? <a href="#">Visit our Support Center</a>.</p>
+            </div>
         </div>
     </div>
 
     <script>
         document.getElementById('loginForm').addEventListener('submit', function(event) {
             event.preventDefault();
-            // Redirect to the next page (survey)
-            window.location.href = 'survey.html';
+            // Redirect to the next page
+            alert("Form Submitted!");
         });
     </script>
 </body>
