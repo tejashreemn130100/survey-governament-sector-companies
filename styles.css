@@ -8,104 +8,102 @@
 body, html {
     height: 100%;
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
 }
 
-/* Main Container */
+/* Main Container with Background Image */
 .container {
-    display: flex;
+    background-image: url('your-kapl-image-path.jpg'); /* Replace with your KAPL image */
+    background-size: cover;
+    background-position: center;
     height: 100vh;
-}
-
-/* Left Section Styling */
-.left-section {
-    flex: 1;
-    background-color: #6a0dad;
-    color: white;
-    padding: 50px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    text-align: center;
+    align-items: center;
 }
 
-.left-section h1 {
-    font-size: 48px;
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box {
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for form */
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    width: 100px;
     margin-bottom: 20px;
 }
 
-.left-section p {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-/* Right Section Styling */
-.right-section {
-    flex: 1;
-    background-color: white;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.right-section h2 {
-    font-size: 32px;
+h2 {
+    font-size: 24px;
     margin-bottom: 10px;
+    color: #333;
 }
 
-.right-section p {
-    font-size: 16px;
-    margin-bottom: 30px;
+p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
 }
 
-/* Input Group Styling */
 .input-group {
     margin-bottom: 20px;
 }
 
-.input-group label {
-    display: block;
-    font-size: 14px;
-    margin-bottom: 5px;
-    color: #333;
-}
-
 .input-group input {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-/* Submit Button Styling */
 .submit-btn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    width: 100%;
+    background-color: #ffcc00; /* Button color similar to the reference */
+    color: #000;
+    padding: 12px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s;
 }
 
 .submit-btn:hover {
-    background-color: #45a049;
+    background-color: #e6b800;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
+.support-link {
+    margin-top: 10px;
+    font-size: 12px;
+}
 
-    .left-section, .right-section {
-        flex: none;
-        width: 100%;
-        padding: 20px;
+.support-link a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.support-link a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .form-box {
+        width: 90%;
     }
 }
