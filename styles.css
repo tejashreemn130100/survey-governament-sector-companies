@@ -1,55 +1,110 @@
-/* General Page Styles */
-body, html {
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
 }
 
-/* Survey Container */
-.survey-container {
-    width: 50%;
-    margin: 50px auto;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+/* Login Page Wrapper */
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('your-image-path.png') no-repeat center center/cover;
+    position: relative;
 }
 
-.survey-container h2 {
-    text-align: center;
-    margin-bottom: 20px;
+/* KAPL Content */
+.kapl-content {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
     color: #333;
 }
 
-.question {
-    margin-bottom: 20px;
-}
-
-.question p {
-    font-size: 18px;
+.kapl-content h1 {
+    font-size: 24px;
     margin-bottom: 10px;
 }
 
-.question label {
-    display: block;
+.kapl-content p {
     font-size: 16px;
-    color: #555;
+    line-height: 1.5;
 }
 
-.submit-btn {
+/* Login Form Styling */
+.login-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 
-.submit-btn button {
+.login-form h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-btn {
     background-color: #4CAF50;
     color: white;
-    padding: 10px 20px;
+    padding: 10px;
+    width: 100%;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
 }
 
-.submit-btn button:hover {
+.submit-btn:hover {
     background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-wrapper {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .kapl-content {
+        width: 90%;
+        top: 5%;
+        left: 5%;
+    }
+
+    .login-form {
+        width: 90%;
+    }
 }
