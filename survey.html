@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAPL Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="survey-container">
+        <h2>Karnataka Antibiotics & Pharmaceuticals Limited Survey</h2>
+        <form id="surveyForm">
+            <div class="question">
+                <p>1. How satisfied are you with the quality of Karnataka Antibiotics & Pharmaceuticals Limited products?</p>
+                <label><input type="radio" name="q1" value="Very Satisfied"> Very Satisfied</label><br>
+                <label><input type="radio" name="q1" value="Satisfied"> Satisfied</label><br>
+                <label><input type="radio" name="q1" value="Neutral"> Neutral</label><br>
+                <label><input type="radio" name="q1" value="Dissatisfied"> Dissatisfied</label><br>
+                <label><input type="radio" name="q1" value="Very Dissatisfied"> Very Dissatisfied</label>
+            </div>
+
+            <div class="question">
+                <p>2. How likely are you to recommend KAPL products to others?</p>
+                <label><input type="radio" name="q2" value="Very Likely"> Very Likely</label><br>
+                <label><input type="radio" name="q2" value="Likely"> Likely</label><br>
+                <label><input type="radio" name="q2" value="Neutral"> Neutral</label><br>
+                <label><input type="radio" name="q2" value="Unlikely"> Unlikely</label><br>
+                <label><input type="radio" name="q2" value="Very Unlikely"> Very Unlikely</label>
+            </div>
+
+            <div class="question">
+                <p>3. How would you rate the affordability of KAPL products?</p>
+                <label><input type="radio" name="q3" value="Very Affordable"> Very Affordable</label><br>
+                <label><input type="radio" name="q3" value="Affordable"> Affordable</label><br>
+                <label><input type="radio" name="q3" value="Neutral"> Neutral</label><br>
+                <label><input type="radio" name="q3" value="Expensive"> Expensive</label><br>
+                <label><input type="radio" name="q3" value="Very Expensive"> Very Expensive</label>
+            </div>
+
+            <div class="submit-btn">
+                <button type="submit">Submit Survey</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('surveyForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for completing the survey!');
+            // Add further logic here, like saving survey results or redirecting to another page.
+        });
+    </script>
+</body>
+</html>
