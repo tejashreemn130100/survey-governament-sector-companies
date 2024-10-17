@@ -1,4 +1,3 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -7,105 +6,74 @@
 
 body, html {
     height: 100%;
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
 }
 
-/* Main Container with Background Image */
 .container {
-    background-image: url('your-kapl-image-path.jpg'); /* Replace with your KAPL image */
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .overlay {
-    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    position: relative;
 }
 
 .form-box {
-    background-color: rgba(255, 255, 255, 0.9); /* Light background for form */
-    padding: 30px;
+    position: relative;
+    padding: 40px 20px;
+    background: url('/mnt/data/image.png') no-repeat center center;
+    background-size: cover;
     border-radius: 10px;
-    width: 400px;
-    text-align: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
-.logo {
-    width: 100px;
-    margin-bottom: 20px;
-}
-
-h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+.form-box h2 {
     color: #333;
+    text-align: center;
 }
 
-p {
-    font-size: 14px;
-    color: #555;
+.form-box p {
+    text-align: center;
     margin-bottom: 20px;
+    color: #666;
 }
 
 .input-group {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .input-group input {
     width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    border: 1px solid #ccc;
+    padding: 10px;
+    border: 1px solid #ddd;
     border-radius: 5px;
 }
 
 .submit-btn {
-    background-color: #ffcc00; /* Button color similar to the reference */
-    color: #000;
-    padding: 12px;
+    width: 100%;
+    padding: 10px;
+    background-color: #f0c030;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
     font-size: 16px;
-    width: 100%;
-    transition: background-color 0.3s;
+    color: white;
+    cursor: pointer;
 }
 
 .submit-btn:hover {
-    background-color: #e6b800;
+    background-color: #e0a020;
 }
 
 .support-link {
+    text-align: center;
     margin-top: 10px;
-    font-size: 12px;
-}
-
-
-.support-link a {
-    color: #ffcc00;
-    text-decoration: none;
-}
-
-.support-link a:hover {
-    text-decoration: underline;
-}
-
-/* Mobile Responsive */
-@media (max-width: 76px) {
-    .form-box {
-        width: 90%;
-    }
-    
+    font-size: 14px;
+    color: #666;
 }
