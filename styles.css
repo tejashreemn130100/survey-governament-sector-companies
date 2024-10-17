@@ -92,6 +92,7 @@ p {
     font-size: 12px;
 }
 
+
 .support-link a {
     color: #ffcc00;
     text-decoration: none;
@@ -102,8 +103,9 @@ p {
 }
 
 /* Mobile Responsive */
-@media (max-width: 768px) {
+@media (max-width: 76px) {
     .form-box {
         width: 90%;
     }
+    
 }
