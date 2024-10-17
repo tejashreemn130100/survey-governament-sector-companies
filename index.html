@@ -10,7 +10,6 @@
     <div class="container">
         <div class="overlay">
             <div class="form-box">
-                <img src="kapl-logo.png" alt="KAPL Logo" class="logo"> <!-- Optional logo -->
                 <h2>Enter Your Details</h2>
                 <p>Log in to KAPL to access our pharmaceutical services.</p>
                 <form id="loginForm" onsubmit="return validateForm()" action="survey.html" method="get">
@@ -29,17 +28,14 @@
 
     <script>
         function validateForm() {
-            // Get form inputs
             var name = document.getElementById('name').value;
             var email = document.getElementById('email').value;
 
-            // Basic validation (you can expand with more checks)
             if (name === "" || email === "") {
-                alert("please fill the details to continue.");
-                return false; // Prevent form submission
+                alert("Both fields are required.");
+                return false; 
             }
 
-            // If validation passes, allow the form to submit
             return true;
         }
     </script>
