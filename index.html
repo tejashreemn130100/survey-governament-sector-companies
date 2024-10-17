@@ -12,7 +12,7 @@
             <div class="form-box">
                 <img src="kapl-logo.png" alt="KAPL Logo" class="logo"> <!-- Optional logo -->
                 <h2>Enter Your Details</h2>
-                <p>Log in to KAPL to access our pharmaceutical services. If you don't have an account, you'll be prompted to create one.</p>
+                <p>Log in to KAPL to access our pharmaceutical services.</p>
                 <form id="loginForm">
                     <div class="input-group">
                         <input type="text" id="name" placeholder="Enter Your Name" required>
@@ -21,8 +21,9 @@
                         <input type="email" id="email" placeholder="Enter Your Email" required>
                     </div>
                     <button type="submit" class="submit-btn">Submit</button>
+                    <form onsubmit="return validateForm()" action="survey.html" method="get">
                 </form>
-                <p class="support-link">Need help? <a href="#">Visit our Support Center</a>.</p>
+                <p class="support-link">Need help? <a href="https://www.kaplindia.com/">Visit our Support Center</a>.</p>
             </div>
         </div>
     </div>
