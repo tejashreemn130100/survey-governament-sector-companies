@@ -29,7 +29,7 @@ body, html {
 .form-box {
     position: relative;
     padding: 40px 20px;
-    background: url('/mnt/data/image.png') no-repeat center center;
+    background: url('kapl-logo.png') no-repeat center center;
     background-size: cover;
     border-radius: 10px;
 }
